@@ -16,8 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self load1];
+//    dispatch_get_global_queue(<#long identifier#>, <#unsigned long flags#>
+    [self load2];
 }
 
-
+- (void)load1{
+    for (int i =0; i<10; i++) {
+        NSLog(@"i==%d",i);
+    }
+}
+- (void)load2{
+    for (int i =0; i<10; i++) {
+        NSLog(@"jjj==%d",i);
+    }
+}
 @end
